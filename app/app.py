@@ -132,3 +132,65 @@ st.plotly_chart(fig3, use_container_width=True)
 
 st.divider()
 st.caption("Built with Python • SQL • Plotly • Streamlit")
+
+import streamlit as st
+
+st.set_page_config(
+    page_title="Qatar Airways Operations Intelligence",
+    page_icon="✈️",
+    layout="wide"
+)
+
+st.title("✈️ Qatar Airways Operations Intelligence Platform")
+
+st.markdown("""
+### End-to-End Aviation Analytics Platform
+
+Built using:
+
+- Python
+- SQL & SQLite
+- Plotly
+- Streamlit
+- Machine Learning
+
+Use the navigation sidebar to explore the analytics.
+""")
+
+st.info("Select a page from the sidebar ←")
+import streamlit as st
+
+st.set_page_config(
+    page_title="Qatar Airways Operations Intelligence",
+    page_icon="✈️",
+    layout="wide"
+)
+
+st.markdown("""
+# ✈️ Qatar Airways Operations Intelligence Platform
+
+### End-to-End Aviation Analytics & Network Planning System
+""")
+
+st.divider()
+
+c1, c2, c3 = st.columns(3)
+
+c1.metric("Flight Records", "336,776")
+c2.metric("Analytics Pages", "4")
+c3.metric("Machine Learning", "Random Forest")
+
+st.markdown("""
+## Platform Overview
+
+This platform demonstrates an airline operations workflow:
+
+- **Executive Dashboard** — KPIs & operational performance
+- **Network Map** — Global airport network
+- **Airport Analytics** — Delay and reliability analysis
+- **Delay Predictor** — Machine learning risk estimation
+
+Use the **sidebar** to navigate between pages.
+""")
+
+st.info("Built with Python • SQL • Plotly • Streamlit")
